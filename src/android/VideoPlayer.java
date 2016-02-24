@@ -116,7 +116,7 @@ public class VideoPlayer extends CordovaPlugin implements OnCompletionListener, 
      */
     public static String stripFileProtocol(String uriString) {
         
-        uriString = Uri.parse(uriString);
+        Uri uriString = Uri.parse(uriString);
         
         return uriString;
     }
