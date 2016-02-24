@@ -115,9 +115,9 @@ public class VideoPlayer extends CordovaPlugin implements OnCompletionListener, 
      * @return a path without the "file://" prefix
      */
     public static String stripFileProtocol(String uriString) {
-        if (uriString.startsWith("file://")) {
-            return Uri.parse(uriString).getPath();
-        }
+        
+        uriString = Uri.parse(uriString);
+        
         return uriString;
     }
 
