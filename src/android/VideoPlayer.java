@@ -33,7 +33,7 @@ public class VideoPlayer extends CordovaPlugin implements OnCompletionListener, 
 
     protected static final String LOG_TAG = "VideoPlayer";
 
-    protected static final String ASSETS = "/android_asset/";
+    protected static final String ASSETS = "";
 
     private CallbackContext callbackContext = null;
 
